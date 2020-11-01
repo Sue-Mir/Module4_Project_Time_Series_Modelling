@@ -10,6 +10,17 @@ The Pre-requisites being the real estate investor would like to focus on investi
 2] Further had the highest ROI in the period following the crash.
 3] The real estate investor, according to their risk profile, believe that this would help reduce the risk that any steep increase in property price following the crash did not reflect a steep decrease during the crash period.
 
+Potential Future Work:
+
+This analysis may be adjusted to analyze data of a number of permutations of risk profiles including for example:
+    - By Country, City, State or Region 
+    - At different time periods including the full time period or 	other entry points depending on the requirements of the 	investor.
+
+Some zipcodes showed a strong investment entry strategy at the beginning of each year and some showed more than one strong investment entry point at the beginning and mid year.  
+
+The data can be analyzed over different time period averages for example yearly, monthly and daily. This would require additional data gathering.
+
+
 Time Series main module :  TimeSeries.ipynb
 Data File:  zillow_data.csv
 
