@@ -14,6 +14,8 @@ The Pre-requisites being the real estate investor would like to focus on investi
 Time Series main module :  TimeSeries.ipynb
 Data File:  zillow_data.csv
 
+## Visualise Data
+![header](time-series/mod4_ts3.png)
 
 ## Zipcode Selection
 Examine Data - Property Market - Post Crash
@@ -27,7 +29,7 @@ Examine Data - Property Market - Post Crash
 ### Rolling Statistics
 Plot the zipcode's returns with their respective rolling mean and rolling standard deviation.
 Visually test for stationarity.
-![header](time-series/mod4_ts10.png)
+![header](time-series/mod4_ts11.png)
 
 ### Validate Stationarity
 Check for stationarity, important for forecasting.
@@ -42,18 +44,18 @@ The Data is not stationary, attempt to remove trends.
 ### Remove Trends
 Take a look at rolling mean and rolling std now after differencing with Exponentially weighted rolling mean.
 
-![header](time-series/mod4_ts11.png)
+![header](time-series/mod4_ts12.png)
 
 After attempting to remove trends through differencing, subtracting the mean the data is not stationary. Use SARIMA model setting enforce_stationarity=False
 
 ### Seasonal Decomposition
-![header](time-series/mod4_ts11.png)
+![header](time-series/mod4_ts17.png)
 
 ### Seasonal Plot
-![header](time-series/mod4_ts11.png)
+![header](time-series/mod4_ts18.png)
 
 ## ACF/PACF
-![header](time-series/mod4_ts11.png)
+![header](time-series/mod4_ts12.png)
 
 Behaviour of the ACF and PACF for ARMA Models
 
@@ -69,17 +71,17 @@ Tails off MA(q)
 Tails off ARMA (p,q)
 
 ## Fit SARIMA model and get results
-![header](time-series/mod4_ts12.png)
+![header](time-series/mod4_ts13.png)
 
 ## Train Predicted Results
-![header](time-seriess/mod4_ts13.png)
+![header](time-seriess/mod4_ts14.png)
 
 
 ## Test Predicted Results
-![header](time-series/mod4_ts14.png)
+![header](time-series/mod4_ts15.png)
 
 ## Forecast Model
-![header](time-series/mod4_ts15.png)
+![header](time-series/mod4_ts16.png)
 
 
 Predicted property mean value at initial investment date 2017-05: 589678.76
