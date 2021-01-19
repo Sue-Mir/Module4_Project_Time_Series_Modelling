@@ -1,4 +1,4 @@
-# Predict with Zillow the top 5 US postcodes to invest in from 2018-04
+# Predict with Zillow the top 5 US Postcodes to invest in from 2018-04
 
 The Main Goal of this project is to provide analysis and predictions for investing in U.S real estate given the investor's risk and investment profile.
 
@@ -6,11 +6,16 @@ The Data Analysed is provided by Zillow and represents U.S monthly sales data by
 
 The Target is to predict for the real estate investor the top 5 postcodes to invest in from 2018-04
 ![header](time-series/mod4_ts0.png)
+
 The Pre-requisites being the real estate investor would like to focus on investing in the city of Chicago. The subset of zipcodes to invest in are those zipcodes that
+
 1] Did not decrease in value by more than the average mean ROI for Chicago zipcodes during the U.S property market crash environ January 2009.
+
 2] Further had the highest ROI in the period following the crash.
+
 3] The real estate investor, according to their risk profile, believe that this would help reduce the risk that any steep increase in property price following the crash did not reflect a steep decrease during the crash period.
 
+# Main Project Files
 Time Series main module :  TimeSeries.ipynb
 Data File:  zillow_data.csv
 
@@ -19,8 +24,8 @@ Data File:  zillow_data.csv
 
 ## Zipcode Selection
 Examine Data - Property Market - Post Crash
-# take the top 5 zipcodes for highest ROI% in data_pre_crash_chicago (those zipcodes that were stable
-#according to the investor pre-requisite, having a ROI during the crash > overall mean for Chicago in this period)
+take the top 5 zipcodes for highest ROI% in data_pre_crash_chicago (those zipcodes that were stable
+according to the investor pre-requisite, having a ROI during the crash > overall mean for Chicago in this period)
 
 ![header](time-series/mod4_ts2.png)
 
@@ -29,7 +34,7 @@ Examine Data - Property Market - Post Crash
 ### Rolling Statistics
 Plot the zipcode's returns with their respective rolling mean and rolling standard deviation.
 Visually test for stationarity.
-![header](time-series/mod4_ts11.png)
+![header](time-series/mod4_ts10.png)
 
 ### Validate Stationarity
 Check for stationarity, important for forecasting.
@@ -44,7 +49,7 @@ The Data is not stationary, attempt to remove trends.
 ### Remove Trends
 Take a look at rolling mean and rolling std now after differencing with Exponentially weighted rolling mean.
 
-![header](time-series/mod4_ts12.png)
+![header](time-series/mod4_ts11.png)
 
 After attempting to remove trends through differencing, subtracting the mean the data is not stationary. Use SARIMA model setting enforce_stationarity=False
 
