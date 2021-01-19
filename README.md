@@ -15,7 +15,7 @@ The Pre-requisites being the real estate investor would like to focus on investi
 
 3] The real estate investor, according to their risk profile, believe that this would help reduce the risk that any steep increase in property price following the crash did not reflect a steep decrease during the crash period.
 
-# Main Project Files
+## Main Project Files
 Time Series main module :  TimeSeries.ipynb
 Data File:  zillow_data.csv
 
@@ -90,9 +90,13 @@ Tails off ARMA (p,q)
 
 
 Predicted property mean value at initial investment date 2017-05: 589678.76
+
 Predicted property mean value in 1 year: 640020.38 is 8.54 %ROI
+
 Predicted property mean value in 3 years: 739309.23 is 25.37 %ROI
+
 Predicted property mean value in 5 years: 838673.62 is 42.23 %ROI
+
 Predicted property mean value in 10 years: 1087181.87 is 84.37 %ROI
 
 
