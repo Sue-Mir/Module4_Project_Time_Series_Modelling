@@ -79,7 +79,7 @@ Tails off ARMA (p,q)
 ![header](time-series/mod4_ts13.png)
 
 ## Train Predicted Results
-![header](time-seriess/mod4_ts14.png)
+![header](time-series/mod4_ts14.png)
 
 
 ## Test Predicted Results
