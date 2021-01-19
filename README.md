@@ -5,7 +5,7 @@ The Main Goal of this project is to provide analysis and predictions for investi
 The Data Analysed is provided by Zillow and represents U.S monthly sales data by region, state and zipcode for the periods 1996-04 - 2018-04.
 
 The Target is to predict for the real estate investor the top 5 postcodes to invest in from 2018-04
-![header](readme_images/mod4_ts0.png)
+![header](time-series/mod4_ts0.png)
 The Pre-requisites being the real estate investor would like to focus on investing in the city of Chicago. The subset of zipcodes to invest in are those zipcodes that
 1] Did not decrease in value by more than the average mean ROI for Chicago zipcodes during the U.S property market crash environ January 2009.
 2] Further had the highest ROI in the period following the crash.
@@ -20,14 +20,14 @@ Examine Data - Property Market - Post Crash
 # take the top 5 zipcodes for highest ROI% in data_pre_crash_chicago (those zipcodes that were stable
 #according to the investor pre-requisite, having a ROI during the crash > overall mean for Chicago in this period)
 
-![header](readme_images/mod4_ts2.png)
+![header](time-series/mod4_ts2.png)
 
 ## Model Example Zipcode: 60642
 
 ### Rolling Statistics
 Plot the zipcode's returns with their respective rolling mean and rolling standard deviation.
 Visually test for stationarity.
-![header](readme_images/mod4_ts10.png)
+![header](time-series/mod4_ts10.png)
 
 ### Validate Stationarity
 Check for stationarity, important for forecasting.
@@ -42,18 +42,18 @@ The Data is not stationary, attempt to remove trends.
 ### Remove Trends
 Take a look at rolling mean and rolling std now after differencing with Exponentially weighted rolling mean.
 
-![header](readme_images/mod4_ts11.png)
+![header](time-series/mod4_ts11.png)
 
 After attempting to remove trends through differencing, subtracting the mean the data is not stationary. Use SARIMA model setting enforce_stationarity=False
 
 ### Seasonal Decomposition
-![header](readme_images/mod4_ts11.png)
+![header](time-series/mod4_ts11.png)
 
 ### Seasonal Plot
-![header](readme_images/mod4_ts11.png)
+![header](time-series/mod4_ts11.png)
 
 ## ACF/PACF
-![header](readme_images/mod4_ts11.png)
+![header](time-series/mod4_ts11.png)
 
 Behaviour of the ACF and PACF for ARMA Models
 
@@ -69,17 +69,17 @@ Tails off MA(q)
 Tails off ARMA (p,q)
 
 ## Fit SARIMA model and get results
-![header](readme_images/mod4_ts12.png)
+![header](time-series/mod4_ts12.png)
 
 ## Train Predicted Results
-![header](readme_images/mod4_ts13.png)
+![header](time-seriess/mod4_ts13.png)
 
 
 ## Test Predicted Results
-![header](readme_images/mod4_ts14.png)
+![header](time-series/mod4_ts14.png)
 
 ## Forecast Model
-![header](readme_images/mod4_ts15.png)
+![header](time-series/mod4_ts15.png)
 
 
 Predicted property mean value at initial investment date 2017-05: 589678.76
@@ -90,7 +90,7 @@ Predicted property mean value in 10 years: 1087181.87 is 84.37 %ROI
 
 
 ## Final Analysis of 5 Zipcodes
-![header](readme_images/mod4_ts1.png)
+![header](time-series/mod4_ts1.png)
 
 
 ## Recommendations
