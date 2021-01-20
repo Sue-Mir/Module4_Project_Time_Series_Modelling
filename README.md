@@ -103,7 +103,7 @@ Validate Train-Test split for Actual vs Predicted results
 ## Forecast Model
 ![header](time-series/mod4_ts16.png)
 
-Forecast ahead from 2017:
+Forecast ahead from 2017 -> 2027:
 
 Predicted property mean value at initial investment date 2017-05: 589678.76
 
