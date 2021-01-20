@@ -16,8 +16,7 @@ The Pre-requisites being the real estate investor would like to focus on investi
 3] The real estate investor, according to their risk profile, believe that this would help reduce the risk that any steep increase in property price following the crash did not reflect a steep decrease during the crash period.
 
 ## Main Project Files
-Time Series main module :  TimeSeries.ipynb
-Data File:  zillow_data.csv
+![header](time-series/mod4_ts19.png)
 
 ## Visualise Data
 ![header](time-series/mod4_ts3.png)
@@ -37,7 +36,11 @@ Visually test for stationarity.
 ![header](time-series/mod4_ts10.png)
 
 ### Validate Stationarity
-Check for stationarity, important for forecasting.
+Check for stationarity, important for forecasting.  Let's quickly re-articulate what makes a time series non-stationary. There are two major reasons behind non-stationarity of a time series:
+
+Trend: Varying mean over time
+
+Seasonality: Certain variations at specific time-frames
 
 ADFuller test p-value for zipcode: 60642
 p-value: 0.7710955432911607
@@ -47,7 +50,7 @@ Fail to reject the null hypothesis. Data is not stationary.
 The Data is not stationary, attempt to remove trends.
 
 ### Remove Trends
-Take a look at rolling mean and rolling std now after differencing with Exponentially weighted rolling mean.
+Take a look at rolling mean and rolling std now after differencing with Exponentially weighted rolling mean.  Weights are assigned to all the previous values with an exponential decay factor.
 
 ![header](time-series/mod4_ts11.png)
 
@@ -56,8 +59,14 @@ After attempting to remove trends through differencing, subtracting the mean the
 ### Seasonal Decomposition
 ![header](time-series/mod4_ts17.png)
 
+Here we can see that the trend and seasonality are separated from data and we can model the residuals.
+Using time-series decomposition makes it easier to quickly identify a changing mean or variation in the data. The plot above shows the upward trend of our data, along with its yearly seasonality. These can be used to understand the structure of the time series. The intuition behind time series decomposition is important, as many forecasting methods are built upon this concept of structured decomposition to produce forecasts.
+
 ### Seasonal Plot
+
 ![header](time-series/mod4_ts18.png)
+
+
 
 ## ACF/PACF
 ![header](time-series/mod4_ts12.png)
@@ -75,12 +84,17 @@ Cuts off after lag p AR(p)
 Tails off MA(q)
 Tails off ARMA (p,q)
 
+Auto-Regressive (p) -> Number of autoregressive terms.
+Integrated (d) -> Number of nonseasonal differences needed for stationarity.
+Moving Average (q) -> Number of lagged forecast errors in the prediction equation.
+
 ## Fit SARIMA model and get results
 ![header](time-series/mod4_ts13.png)
 
 ## Train Predicted Results
-![header](time-series/mod4_ts14.png)
+Validate Train-Test split for Actual vs Predicted results
 
+![header](time-series/mod4_ts14.png)
 
 ## Test Predicted Results
 ![header](time-series/mod4_ts15.png)
@@ -88,6 +102,7 @@ Tails off ARMA (p,q)
 ## Forecast Model
 ![header](time-series/mod4_ts16.png)
 
+Forecast ahead from 2017:
 
 Predicted property mean value at initial investment date 2017-05: 589678.76
 
@@ -107,9 +122,11 @@ Predicted property mean value in 10 years: 1087181.87 is 84.37 %ROI
 ## Recommendations
 The results were based on the sales data of zipcodes extracted to suit the pre-requisites of the investors risk profile This analysis may be adjusted to analyse data of a number of permutations of risk profiles including for example:
 
-Overall country data, by city, state or region code
-At different time periods including the full time period
-Analysis of the seasonal patterns according to the rolling mean can be used to decide the entry point of investment, for example, some zipcodes showed a strong investment entry strategy at the beginning of each year and some showed more than one strong investment entry point at the beginning and mid year. All 5 postcodes showed a seasonality on monthly rolling period of 365 days.
+- Overall country data, by city, state or region code
+
+- At different time periods including the full time period
+
+- Analysis of the seasonal patterns according to the rolling mean can be used to decide the entry point of investment, for example, some zipcodes showed a strong investment entry strategy at the beginning of each year and some showed more than one strong investment entry point at the beginning and mid year. All 5 postcodes showed a seasonality on monthly rolling period of 365 days.
 
 The monthly rolling mean period can be extended to n days, n months, n years, depending on the amount of data being analysed versus prediction power, in order to further remove trends and increase stationarity of data.
 
