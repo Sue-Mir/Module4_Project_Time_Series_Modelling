@@ -2,7 +2,7 @@
 
 The Main Goal of this project is to provide analysis and predictions for investing in U.S real estate given the investor's risk and investment profile.
 
-The Data Analysed is provided by Zillow and represents U.S monthly sales data by region, state and zipcode for the periods 1996-04 - 2018-04.
+The Data Analyzed is provided by Zillow.com and represents U.S monthly sales data by region, state and zipcode for the periods 1996-04 - 2018-04.
 
 The Target is to predict for the real estate investor the top 5 postcodes to invest in from 2018-04
 ![header](time-series/mod4_ts0.png)
@@ -33,6 +33,7 @@ according to the investor pre-requisite, having a ROI during the crash > overall
 ### Rolling Statistics
 Plot the zipcode's returns with their respective rolling mean and rolling standard deviation.
 Visually test for stationarity.
+
 ![header](time-series/mod4_ts10.png)
 
 ### Validate Stationarity
