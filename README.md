@@ -90,6 +90,15 @@ Integrated (d) -> Number of nonseasonal differences needed for stationarity.
 Moving Average (q) -> Number of lagged forecast errors in the prediction equation.
 
 ## Fit SARIMA model and get results
+The Auto Regressive Integrated Moving Average (ARIMA) model has the following hyperparameters to account for seasonality, trend, and noise in the data:
+
+Number of auto regressive terms (p): the effects of past values
+Number of differences (d): the amount of differencing (see above)
+Number of moving average terms (q): the error of the model as a linear combination of the error values observed at previous time points in the past
+(P, D, Q) follow the same definition but are applied to the seasonal component of the time series.
+
+The optimal values for these hyperparameters were selected based on prior steps and a gridsearch. The model was then built.
+
 ![header](time-series/mod4_ts13.png)
 
 ## Train Predicted Results
