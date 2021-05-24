@@ -141,4 +141,4 @@ The results were based on the sales data of zipcodes extracted to suit the pre-r
 The monthly rolling mean period can be extended to n days, n months, n years, depending on the amount of data being analysed versus prediction power, in order to further remove trends and increase stationarity of data.
 
 
-Sue Mir / Flatiron Data Science Course / September 2020
+ / Flatiron Data Science Course / September 2020
